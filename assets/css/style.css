@@ -19,7 +19,7 @@ body {
   color: #444444;
 }
 
-p{
+p {
   margin-bottom: 0%;
 }
 
@@ -433,7 +433,7 @@ h6 {
 .header .search-form input {
   border: 0;
   font-size: 14px;
-  color: #012970;
+  color: #ffffff;
   border: 1px solid rgba(1, 41, 112, 0.2);
   padding: 7px 38px 7px 8px;
   border-radius: 3px;
@@ -688,7 +688,7 @@ h6 {
   display: flex;
   align-items: center;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: #444444;
   transition: 0.3;
   background: #fff;
@@ -699,7 +699,7 @@ h6 {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color:  #444444;
+  color: #444444;
 }
 
 .sidebar-nav .nav-link.collapsed {
@@ -716,7 +716,8 @@ h6 {
   background: #f6f9ff;
 }
 
-.sidebar-nav .nav-link:hover i,.sidebar-nav .nav-link:hover path {
+.sidebar-nav .nav-link i,
+.sidebar-nav .nav-link path {
   fill: #3bb161;
 }
 
@@ -754,7 +755,7 @@ h6 {
 }
 
 .sidebar-nav .nav-content a:hover,
-.sidebar-nav .nav-content a.active {    
+.sidebar-nav .nav-content a.active {
   color: #3bb161;
 }
 
@@ -1237,13 +1238,14 @@ h6 {
   color: #012970;
 }
 
-.search-bar input[type="text"]::placeholder{
-    color: white;
-    opacity: 1; /* Firefox */
+.search-bar input[type="text"]::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
 }
 
-.sidebar-nav .nav-item .nav-link .bi-chevron-down::before{
-  color:#3bb161;
+.sidebar-nav .nav-item .nav-link .bi-chevron-down::before {
+  color: #3bb161;
 }
 
 .btn-3bb161 {
@@ -1253,7 +1255,7 @@ h6 {
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #3bb161;
   --bs-btn-hover-border-color: #3bb161;
-  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #3bb161;
   --bs-btn-active-border-color: #3bb161;
@@ -1262,13 +1264,15 @@ h6 {
   --bs-btn-disabled-bg: #3bb161;
   --bs-btn-disabled-border-color: #3bb161;
 }
-.inline-radio-buttons{
+
+.inline-radio-buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.inline-radio-buttons .form-check-inline{
+
+.inline-radio-buttons .form-check-inline {
   box-sizing: border-box;
   width: 202px;
   height: 33px;
@@ -1280,33 +1284,38 @@ h6 {
   background-color: rgba(53, 179, 98, 0.200000003);
   border-radius: 10px;
 }
-.inline-radio-buttons .form-check-inline .form-check-input{
-  margin-left:3px;
+
+.inline-radio-buttons .form-check-inline .form-check-input {
+  margin-left: 3px;
   margin-right: 7px;
   border: 1px solid #444444;
 }
+
 .g-3 .form-control:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
   border-color: #3bb161;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(59, 177, 97,.25);
-}
-.section-taxChallan .div-1{
-height: 752px;
-box-shadow: 2px 2px 3.903px 0px rgba(0, 0, 0, 0.25);
-background-color: #ffffff;
-border-radius: 10px;
+  box-shadow: 0 0 0 0.25rem rgba(59, 177, 97, .25);
 }
 
-.section-taxChallan .div-2 .row-1,.section-taxChallan .div-2 .row-2{
-  height: 364px;
+.section-taxChallan .div-1 {
+  height: 785px;
+  box-shadow: 2px 2px 3.903px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.section-taxChallan .div-2 .row-1,
+.section-taxChallan .div-2 .row-2 {
+  /* height: 364px; */
+  height: max-content;
   margin-left: 20px;
   padding-right: 20px;
   padding-left: 20px;
-  }
- 
-.section-taxChallan .div-1 .card{
+}
+
+.section-taxChallan .div-1 .card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1319,7 +1328,8 @@ border-radius: 10px;
   box-sizing: border-box;
   border-radius: 10px;
 }
-.section-taxChallan .div-2 .card{
+
+.section-taxChallan .div-2 .card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1334,26 +1344,138 @@ border-radius: 10px;
   box-sizing: border-box;
   border-radius: 10px;
 }
-.section-taxChallan .div-2 .row-2 .state-taxes p{
+
+.section-taxChallan .div-2 .row-2 .state-taxes p {
   font-size: 12px;
   margin-bottom: 0%;
 }
-.section-taxChallan .div-2 .row-2 .state-taxes hr{
+
+.section-taxChallan .div-2 .row-2 .state-taxes hr {
   margin-top: 10px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   color: #636363;
 }
-@media(max-width:1199px){
-  .section-taxChallan .div-2 .row-1,.section-taxChallan .div-2 .row-2{
+
+@media(max-width:1199px) {
+
+  .section-taxChallan .div-2 .row-1,
+  .section-taxChallan .div-2 .row-2 {
     margin-left: 0%;
   }
+
   .section-taxChallan .div-1,
   .section-taxChallan .div-2 .row-1,
-  .section-taxChallan .div-2 .row-2{
+  .section-taxChallan .div-2 .row-2 {
     height: max-content;
   }
 }
-.section-payGST .card-text{
+
+.section-payGST .card-text {
   padding: 20px;
-  line-height: 40px;;
+  line-height: 40px;
+  ;
+}
+
+.btn-outline-3bb161 {
+  --bs-btn-color: #3bb161;
+  --bs-btn-border-color: #3bb161;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3bb161;
+  --bs-btn-hover-border-color: #3bb161;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #3bb161;
+  --bs-btn-active-border-color: #3bb161;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #3bb161;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #3bb161;
+  --bs-gradient: none;
+}
+
+.section-taxChallan .table>:not(caption)>*>* {
+  color: #444444;
+}
+
+.row-1 .mt-4 {
+  margin-top: 33px !important;
+}
+
+@media(max-width:540px) {
+  .documents-table {
+    font-size: 9px;
+  }
+}
+
+.documents-search input[type="text"]::placeholder {
+  color: #3bb161;
+  opacity: 1;
+  /* Firefox */
+}
+
+.documents-search input[type="text"] {
+  background-color: #ffffff;
+  color: #3bb161;
+  height: 38px;
+  width: 35%;
+  border-radius: 10px;
+}
+
+.documents-search input[type="date"] {
+  background-color: #ffffff;
+  color: #3bb161;
+  height: 38px;
+  width: 20%;
+  border-radius: 10px;
+}
+
+.documents-search button[type="submit"] {
+  width: 10%;
+  border-radius: 10px;
+}
+
+.documents-search .search-form .search {
+  height: 38px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  right: 40px;
+  display: flex !important;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardRow .card {
+  box-shadow: 2px 2px 3.903px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cardRow .card p {
+  color: #004C8F;
+}
+.myACcol1-info label{
+  font-size: 12px;
+}
+.myACcol1-info input{
+  border: none;
+  background-color: transparent;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  font-size: 14px;
+  color: #004C8F;
+}
+.myACcol1-info hr{
+  margin:4px;
+}
+.cardRowCol1{
+display: flex!important;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
 }
