@@ -335,3 +335,26 @@
   }
 
 })();
+
+$(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        items: 2, // Number of items to display at a time
+        loop: true, // Infinite loop
+        margin: 12, // Space between items
+        autoplay: true, // Auto play
+        autoplayHoverPause: true,
+        autoplayTimeout: 3000, // Time between slides
+        // stagePadding: 150,//used when you want to show half left and half right images in slider
+        responsive: {
+            0: {
+                items: 1 // Number of items to display on small screens
+            },
+            600: {
+                items: 2 // Number of items to display on medium screens
+            },
+            1000: {
+                items: 2 // Number of items to display on large screens
+            }
+        }
+    });
+});

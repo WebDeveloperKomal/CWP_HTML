@@ -1331,7 +1331,7 @@ h6 {
   text-align: center;
   padding: 20px 10px;
   height: 140px;
-  font-size: 12px;
+  font-size: 14px;
   border: solid 1px #636363;
   box-sizing: border-box;
   border-radius: 10px;
@@ -1342,7 +1342,7 @@ h6 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-content: space-around;
   align-items: center;
   text-align: center;
   padding: 20px 10px;
@@ -1354,7 +1354,7 @@ h6 {
 }
 
 .section-taxChallan .div-2 .row-2 .state-taxes p {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0%;
 }
 
@@ -1518,4 +1518,27 @@ h6 {
 .section-taxChallan .accordion-flush .accordion-button:not(.collapsed) {
   box-shadow: none;
   color: #3bb161;
+}
+.owl-carousel .owl-item img {
+  width: 100px;
+}
+
+.owl-stage-outer {
+  height: auto !important;
+}
+
+.owl-stage {
+  width: 100%;
+}
+
+.owl-carousel button.owl-dot {
+  display: none;
+}
+
+.owl-carousel .card .card-body{
+  height: 161.33px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
