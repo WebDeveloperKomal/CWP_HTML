@@ -434,9 +434,8 @@ h6 {
   border: 0;
   font-size: 14px;
   color: #ffffff;
-  border: 1px solid rgba(1, 41, 112, 0.2);
   padding: 7px 38px 7px 8px;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: 0.3s;
   width: 100%;
 }
@@ -1269,7 +1268,7 @@ h6 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:flex-start;
 }
 
 .inline-radio-buttons .form-check-inline {
@@ -1281,9 +1280,9 @@ h6 {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  border: solid 1px #164778;
   background-color: rgba(53, 179, 98, 0.200000003);
   border-radius: 10px;
+  font-size: 12px;
 }
 @media(max-width:458px){
   .inline-radio-buttons .form-check-inline{
@@ -1329,9 +1328,10 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  align-items: center;
   padding: 20px 10px;
   height: 140px;
-  font-size: 14px;
+  font-size: 12px;
   border: solid 1px #636363;
   box-sizing: border-box;
   border-radius: 10px;
@@ -1363,7 +1363,9 @@ h6 {
   margin-bottom: 10px;
   color: #636363;
 }
-
+.section-taxChallan .div-2 .row-2 .state-taxes svg {
+  margin-right: 20px;
+}
 @media(max-width:1199px) {
 
   .section-taxChallan .div-2 .row-1,
@@ -1377,11 +1379,16 @@ h6 {
     height: max-content;
   }
 }
-
+.section-taxChallan .div-2 .row-2 {
+  overflow: scroll;
+  height: 355px;
+}
+.section-taxChallan .div-1 p{
+  font-size: 12px;
+}
 .section-payGST .card-text {
   padding: 20px;
-  line-height: 40px;
-  ;
+  line-height: 25px;
 }
 
 .btn-outline-3bb161 {
@@ -1409,6 +1416,19 @@ h6 {
   margin-top: 33px !important;
 }
 
+.documents-table th{
+  font-size: 14px;
+}
+.documents-table td{
+  font-size: 12px;
+}
+.documents-table select{
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: 12px;
+  padding-right: 0%;
+}
 @media(max-width:540px) {
   .documents-table {
     font-size: 9px;
@@ -1427,6 +1447,7 @@ h6 {
   height: 38px;
   width: 35%;
   border-radius: 10px;
+  border: 1px #454545 solid;
 }
 
 .documents-search input[type="date"] {
@@ -1435,6 +1456,7 @@ h6 {
   height: 38px;
   width: 20%;
   border-radius: 10px;
+  border: 1px #454545 solid;
 }
 
 .documents-search button[type="submit"] {
@@ -1461,6 +1483,12 @@ h6 {
   height: 250px;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 48.5%;
+}
+@media(max-width:851px){
+  .cardRow .card {
+    max-width: 100%;
+  }
 }
 
 .cardRow .card p {
@@ -1468,7 +1496,7 @@ h6 {
 }
 
 .myACcol1-info label,.cardRowCol3 label {
-  font-size: 12px;
+  font-size: 10px;
 }
 .cardRowCol3 input {
   font-size: 14px;
@@ -1482,6 +1510,10 @@ h6 {
   margin-bottom: 1%;
   font-size: 14px;
   color: #004C8F;
+  font-weight: 600;
+}
+.cardRow .card input{
+  font-weight: 600;
 }
 
 .myACcol1-info hr {
@@ -1498,7 +1530,7 @@ h6 {
 
 .cardRowCol2 a{
   border-radius: 20px;
-  width: 135px;
+  width: 150px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1541,4 +1573,34 @@ h6 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+section h1{
+  font-size: 22px;
+}
+.g-3 .form-control,.g-3 select{
+  height: 55px;
+  min-height: 55px;
+  font-size: 12px!important;
+}
+.show-bg{
+  background-image: url('/assets/img/my_profile.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 5px solid #3bb161 !important;
+  height: 110px;
+  width: 110px;
+  padding: 10px !important;
+  border-radius: 50%;
+  max-width: 150px;
+}
+.ard {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#imageContainer img{
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  border: 5px solid #3bb161 !important;
 }

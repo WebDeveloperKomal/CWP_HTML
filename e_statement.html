@@ -605,7 +605,7 @@
 
     <section class="section">
       <div class="row">
-        <div class="col-xl-10 col-12">
+        <div class="  col-12">
           <div class="card">
             <div class="card-body">
               <h1 style="color: #004C8F;" class="card-title">E-Statement</h1>
@@ -630,15 +630,15 @@
                   </form>
               <form class="row g-3">
                 <div class="col-md-10 col-12 mb-4 inline-radio-buttons justify-content-start">
-                <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline" id="form-check-inline1">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                   <label class="form-check-label" for="inlineRadio1">Monthly</label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline" id="form-check-inline2">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                   <label class="form-check-label" for="inlineRadio2">Yearly</label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline" id="form-check-inline3">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
                   <label class="form-check-label" for="inlineRadio3">Other Fees</label>
                 </div>
@@ -708,7 +708,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+      if(document.getElementById("inlineRadio1").checked == true){
 
+      }
+  </script>
 </body>
 
 </html>
