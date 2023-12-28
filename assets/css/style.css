@@ -1379,10 +1379,6 @@ h6 {
     height: max-content;
   }
 }
-.section-taxChallan .div-2 .row-2 {
-  overflow: scroll;
-  height: 355px;
-}
 .section-taxChallan .div-1 p{
   font-size: 12px;
 }
@@ -1603,4 +1599,15 @@ section h1{
   width: 110px;
   border-radius: 50%;
   border: 5px solid #3bb161 !important;
+}
+.header-nav .profile .dropdown-item{
+  color: white;
+  background-color: #3bb161;
+}
+.dropdown-header,.dropdown-header h6{
+  color: white!important;
+  background-color: #73b6f0;
+}
+.header-nav .profile .dropdown-item:hover{
+  background-color: #73b6f0;
 }
